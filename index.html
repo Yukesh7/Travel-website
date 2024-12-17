@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel NZ</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <img src="image/Logo.png" alt="Company Logo" class="logo" width="150">
+        <div class="menu-btn">&#9776;</div> <!-- Hamburger Menu -->
+        <ul class="nav-links">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="tour.html">Tours</a></li> 
+            <li><a href="contacts.html">Contact</a></li> 
+            <li class="ctn"></a><a href="contacts.html">Book A Trip</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="image">
+            <img src="image/Untitled design.png" alt="Backpacker">
+        </div>
+        <div class="text-section">
+            <h1>Explore The Wonders of New Zealand with Travel NZ</h1>
+            <p>
+                At Travel NZ, we are dedicated to providing exceptional tourism services 
+                for travelers from around the globe. New Zealand, with its breathtaking 
+                landscapes, vibrant culture, and rich history, offers an unforgettable 
+                experience for every type of adventurer.
+            </p>
+            <!-- Call-to-Action Button -->
+            <div class="Ctn">
+                </a><a  href="contacts.html">Travel with us</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu');
+        });
+    </script>
+</body>
+</html>
